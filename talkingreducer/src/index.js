@@ -38,6 +38,20 @@ const talkingReducer = (state = 0, { type, text }) => {
 //https://redux.js.org/recipes/structuring-reducers/refactoring-reducers-example
 //https://stackoverflow.com/questions/40033443/redux-use-action-object-method-in-reducer-instead-of-switch
 
+//
+// webpackHotDevClient.js:138 ./src/index.js
+//   Line 22:  Expected a default case  default-case
+//   Line 26:  Expected a default case  default-case
+//   Line 33:  Duplicate case label     no-duplicate-case
+// printWarnings @ webpackHotDevClient.js:138
+// handleWarnings @ webpackHotDevClient.js:155
+// ./node_modules/react-dev-utils/webpackHotDevClient.js.connection.onmessage @ webpackHotDevClient.js:208
+// ./node_modules/sockjs-client/lib/event/eventtarget.js.EventTarget.dispatchEvent @ eventtarget.js:51
+// (anonymous) @ main.js:274
+// ./node_modules/sockjs-client/lib/main.js.SockJS._transportMessage @ main.js:272
+// ./node_modules/sockjs-client/lib/event/emitter.js.EventEmitter.emit @ emitter.js:50
+// WebSocketTransport.ws.onmessage @ websocket.js:35
+
 const store = redux.createStore(talkingReducer);
 
 store.dispatch({ type: 'GREETING' });
