@@ -16,7 +16,10 @@ const willDeliverPizza = {
   'Cincinatti Av.': true
 };
 
-names = names.concat(ages);
+//var output = document.getElementById('output');
+
+//
+// names = names.concat(ages);
 
 // var map = function(array, callback) {
 //   var userData = [];
